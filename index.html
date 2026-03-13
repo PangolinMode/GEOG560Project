@@ -4,136 +4,203 @@
   <b>Annotated Bibliography For Using GIS to Assess Habitat Suitability for Raptor Species in Los Altos, California</b>
 <br><br>
 Written and Organized by Carl van Reis for the Winter Term 2026 term of GEOG 560 at Oregon State University
+</h1>
+  <h2>
   <br><br>
   This collection of scientific literature and web sources are intended to inform how one would approach using Geographic Information Systems (GIS) to assess how suitable the semi-urban landscape of Los Altos, CA is to the continued presence of raptor species observed in its boundaries and in surrounding areas as one means of judging the area's ability to support an intricate food web.
-</h1>
+</h2>
 
 
-<h2>Annotated Bibligraophy</h2>
+<h3>Annotated Bibligraophy</h3>
   Armstrong, T.V. (2023). “Hawk Poop: Everything You’ve Ever Wanted To Know.” A-Z Animals. https://a-z-animals.com/blog/hawk-poop-everything-youve-ever-wanted-to-know/ 
 <br><br>
-<b>Summary</b>
+<b>Summary:</b>
 In this blog post for A-Z animals, Armstrong takes a comprehensive deep-dive into hawk poop and what we can learn from it. She first covers what makes the hawk genera different in their hunting and prey choices to inform some of the contributing differences between hawks. Afterwards, she answers a wide array of questions that could come up regarding hawk feces, including color, location, smell, and danger level.
 <br><br>
-<b>Relevance to Capstone</b>
+<b>Relevance to Topic of Interest:</b>
 From the list of prey the author provides on the buteos genus—which red-shouldered hawks belong to—rabbits, rats, squirrels, insects, and small birds emerge as the potential prey for red-shouldered hawks in Los Altos, California. The author notes that red-shouldered hawks prefer to hunt in open areas, and roadways are included in that category, making an urban environment potentially useful for these hawks albeit dangerous. The piece also makes a distinction between the red-shouldered hawk and Cooper’s hawks which also inhabit the area, with Cooper’s Hawk belonging to the Accipiters genus, which prefers to hunt lower to the ground than buteos. Accipiters she says, prefer to prey on songbirds, which would suggest these two hawks are filling separate niches in the habitat. The blog post also highlights pellets from hawks having less bones than from owls, marking an indicator that can be use for estimating hawk and owl range and nest location in Los Altos. Back to the topic of the feces itself, hawk feces can superficially look similar to that of many other birds that coat their feces in a white substance. However, different colors can provide clues about hunting success; green feces could indicate a struggle to eat while yellow would mean they have eaten fat-rich prey recently. However, these colors could also be a sign of an infection too, confounding this identification method for untrained parties. The hawk penchant for defecating upon takeoff versus in-flight adds to the strength of feces as an indicator of nesting, hunting, or resting spots within a range, with babies sometimes only defecting as far down as a section of their inhabited tree.
 
-<br>
+<br><br>
   “Red-shouldered Hawk.” (n.d.). Hawk Mountain Sanctuary. https://www.hawkmountain.org/raptors/red-shouldered-hawk 
-<b>Summary</b>
+<br><br>
+  <b>Summary:</b>
 This profile of red-shouldered hawks covers fun facts, how to identify them, mating rituals, their diet, migration habits, and conservation status.
-
-
-<b>Relevance to Capstone</b>
+<br><br>
+<b>Relevance to Topic of Interest:</b>
 This source was sought out to answer the question of nest size for these hawks as one potential rule for determining suitable nesting sites, with the high-end size being 2 feet across and 1 foot deep. The same section mentions that they build their nests in the upper half of trees and often near the tree’s center. This detail may be difficult to use in practice with GIS but could be a building block for favoring trees with wider canopies.
 
 The webpage mentions that the Great-Horned Owl is a threat to this species at every life stage, particularly going after the hawk’s eggs. Raccoons are mentioned as another egg snatcher. These species could be seen as important natural means of long term checks to potential hawk overabundance in urban settings to factor in when thinking through the larger ecosystem.
 
-<br>
+<br><br>
 
 “Red-Shouldered Hawk.” (n.d.). CornellLab: All About Birds. https://www.allaboutbirds.org/guide/Red-shouldered_Hawk/overview 
+<br><br>
 
-<b>Summary</b>
+<b>Summary:</b>
+This webpage briefly profiles the Red-Shouldered Hawk, featuring its range map, a few visual cues for spotting them, as well as assorted facts about their behavior and history. 
+<br><br>
 
-<b>Relevance to Capstone</b>
+<b>Relevance to Topic of Interest:</b>
+Notably, the description emphasizes that their preferred habitat is in trees within forests near waterways, which can provide clues about the features they could key in on when choosing nesting spots in urban and suburban environments. The page describes their contentious relationship with two other notable birds found in Los Altos: the American Crow and the Great Horned Owl. The owl and hawk have both been observed taking young from one another out of the nest, and while the hawk and crow will fight over resources, they have a capacity for teamwork against the Great Horned Owl. This collaboration makes describing desirable habitat more nuanced when trying to determine what healthy ecosystem function looks like for these creatures collectively. The page also mentions that these hawks will nest at the same place for sometimes longer than a decade, which could lead to fruitful year-over-year comparisons of a site for detecting disturbances or changes in behavior. Finally, this profile highlights hawk feces found on the ground as an indicator of an inhabited nest, which could be one data point that a GIS could incorporate for building a model of highly conducive habitat to productive nesting sites for Red-Shouldered Hawks.
+<br><br>
+Akcay, H. G., Kabasakal, B., Aksu, D., Demir, N., Oz, M., & Erdogan, A. (2020). Automated Bird Counting with Deep Learning for Regional Bird Distribution Mapping. Animals (Basel), 10(7), Article 1207. https://doi.org/10.3390/ani10071207
+ <br><br>
+ 
+<b>Summary:</b>
+Adams et al. explores the use of deep neural networks for bird counting to overcome the deficiencies in the popular point count and photographic count methods for collecting this data, with an ultimate use case being to aid conservation plans with more accurate bird population sizes. Using thousands of pictures of high-quality pictures taken across Turkey of various bird species to inform the models’ knowledge, experts and neural network models were asked to detect bird data points, which would be used to inform a bird migration map over the country. Of the models tested, the researchers conclude that the most accurate learning model is Faster R-CNN, the combination of a convolutional neural network with a Regional Proposal Network (RPN). A single-shot-detector (SSD) model conversely can be employed when speed of detection is a crucial factor. The models detected birds at about an even rate with human experts but were all faster than experts at this detection, lending support to their use, at least as a way of speeding up expert identification. However, the models have major issues with detection for birds that only take up less than 1500 pixels or more than 60,000 pixels.
+  <br><br>
 
-<br>
+<b>Relevance to Topic of Interest:</b>
+While this study took place in Turkey, the inclusion of Accipitriformes adds validity to the use of these machine learning methods for the detection of Cooper’s Hawks along with other birds of interest. The researchers mention that a major challenge of this approach is the need for a lot of photographic examples to build accurate learning models, but that in cases of low counts, one can bring in a related data set to start the process, as well as flip source images horizontally to inflate the data fed into the model. While not ideal, these techniques could prove useful for a smaller city like Los Altos with less data available. Figure 8 in the study shows false detections that the model detected, which suggests additional layers are needed than the researchers used here to make results more accurate in contexts like near urban features and in trees. The narrower species focus proposed for this capstone could make generating enough source data challenging to avoid false positives of other bird species in the area of interest.
+
+  <br><br>
+Atuo, F. A., & O’Connell, T. J. (2017). Structural heterogeneity affects raptor assemblages and niche characteristics in mixed‐grass ecosystems. Ecosphere (Washington, D.C), 8(9), Article 01907. https://doi.org/10.1002/ecs2.1907
+<br><br>
+<b>Summary:</b>
+  This study investigated the effect of landscape heterogeneity on raptor assemblages in wildlife areas in Oklahoma. After establishing transect lines across these ranges, researchers used both on-foot and in-vehicle observations of stationary raptors to record their presence in different land covers. They found that areas with continuous homogenous zones showed less species overlap than the more heterogenous areas. Within heterogenous areas, raptors were more likely to show less preference as they would gravitate to perches found in different cover types depending on availability
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+Los Altos would not be categorized as a mixed-grass prairie, but this study included the Great Horned Owl, Cooper’s Hawk, and hawks closely related to the red-shouldered hawk. For example, they found Cooper’s Hawk and Great Horned Owls to be associated with landscape compositions with perches, notably 4m high stems from oak species in the area. Elevation in particular was a strong predictor of Cooper’s Hawks assemblages. Both perch abundance and elevation can be factors included to predict suitable habitat for these species.
+
+Central to their investigation is the idea that generalists are at an advantage over specialist raptors when large, homogenous areas are reduced, forcing raptors into using multiple land cover types and subsequently leading to them being outcompeted by generalists in these areas. This study raises the question of the necessary patch size of homogenous zones to support overall diversity in the predator bird class to the possible detriment of land cover diversity. With a major thrust in urban forestry being species diversity to avoid catastrophic rapid die-offs of species from chance events, trying to bake in a diverse set of large homogenous zones for predators could be a necessary dimension to consider for predicting suitable sites for raptors and owls. At the same time, discounting their adaptability to these more heterogenous areas would also be a disservice when trying to fulfill multiple objectives in an urban context.
+
+  <br><br>
+Chiang, S. N., Bloom, P. H., Bartuszevige, A. M., & Thomas, S. E. (2019). SPECIAL TOPIC B. Home Range and Habitat Use of Cooper’s Hawks in Urban and Natural Areas. In P. S. Warren & C. A. Lepczyk (Eds.), Urban Bird Ecology and Conservation (Vol. 45, pp. 325–360). University of California Press. https://doi.org/10.1525/9780520953895-022
+ <br><br>
+ 
+<b>Summary:</b>
+  Chiang et al. (2019) investigated breeding and nesting behaviors of Cooper’s hawks in Southern California and found that nest sizes were larger in urban environments and despite being present in parks and industrial areas more than researchers thought they would be, they conclude that these birds show a preference for more natural habitats in urban environments, like in the coast live oaks they show preference for in natural habitats.
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+Important to the investigation of this bibliography, researchers used the great horned owl at times as a lure to capture Cooper’s hawks for this study. They recorded the location of the hawks at half-hour intervals and primarily used triangulation to determine nesting sites, with direct observation supplementing, utilizing an ArcView script and ArcGIS software to overlay native vegetation types on identified nesting sites for analysis. While nests in natural areas were all in coast live oaks, 75% of urban nests were in Eucalyptus trees, possibly widening the criteria for suitable habitat or at least qualifying what could be utilized versus what is more ideal.
+
+  <br><br>
+Dykstra, C. R., Simon, M. M., Daniel, F. B., & Hays, J. L. (2012). HABITATS OF SUBURBAN BARRED OWLS (STRIX VARIA) AND RED-SHOULDERED HAWKS (BUTEO LINEATUS) IN SOUTHWESTERN OHIO. The Journal of Raptor Research, 46(2), 190–200. https://doi.org/10.3356/JRR-11-05.1
+  <br><br>
+
+<b>Summary:</b>
+  This study focused on the habitat of barred owls and how much their nesting site features were differentiated from that of red-shouldered hawks in different urban land-cover types in Ohio. Researchers concluded that their land cover preferences follow similar patterns, with forest being preferred followed by residential areas with low occupancy. The biggest differentiators noted are that barred owls showed higher preference for Sycamore trees and penchant for selecting 10cm larger trees for nesting sites on average than red-shouldered hawks observed.
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+The study mentions in reference to studies in 2000-2001 that at least in the study area in Ohio, home ranges for red-shouldered hawks were 90-hectares in size, with an average distance from homes of 75 meters. These metrics provide a useful baseline for judging suitable habitat, with the distance from homes possibly narrowing selected areas extensively as more housing is built. 
+
+A red-shouldered hawk nest as well was in one instance taken over by barred owls later that year, suggesting there may be sufficient cases to suggest sites as being best fit for all raptor species. Notably, the red-shouldered hawks were only observed nesting in living trees while the owls settled in a mix of alive and dead trees. The study mentioned that the California variant of the red-shouldered hawk had joined this area of Ohio and showed a greater tolerance for housing density than the eastern counterpart. They mentioned that the increased competition between different raptor species from this resulting overlap in suburban areas led to worse reproductive outcomes for both. This project then needs to try to resolve how both can coexist without dooming all raptor species in the process of accommodating all.
+  
+<br><br>
+Hernández-Lambraño, R. E., Sánchez-Agudo, J. Á., & Carbonell, R. (2018). Where to start? Development of a spatial tool to prioritise retrofitting of power line poles that are dangerous to raptors. The Journal of Applied Ecology, 55(6), 2685–2697. https://doi.org/10.1111/1365-2664.13200
+  <br><br>
+
+  <b>Summary:</b>
+  This study of power poles in Spain endeavored to create a prediction model based on boosted regression trees (BRT) that could identify which poles are in need of replacement to reduce chance of raptor electrocution, with raptors cited as being at higher risk than other bird groups due to their perching behavior. After comparing models paying attention to habitat, pole features, and the combination, they concluded the model performed best when both sets of data were under consideration and that the model was successful at predicting future sites of electrocution at a higher rate than one would expect by chance. Areas with land mostly occupied by crops, scrub grass, and low height trees were more likely to be sites of electrocution.
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+With people advocating for under-grounding power lines in Los Altos, this problem could be resolved in the far future. However, in the short-term, eliminating sites of high risk should be deemed as high priority as ill-fitting for the survival of the raptors of interest. This study took place in a similarly Mediterranean climate and featured a likely similar prey-predator relationship as seen in California with European rabbits and raptors, so the results could be more predictive than expected.
+
+Accipitridae, the genus that Cooper’s Hawks belong to, made up 78.5% of electrocutions, meaning they could be labelled as more sensitive to this concern in a proposed GIS nest site projection map for Los Altos.
+
+The researchers mention that poles giving hawks a wide view are a concern since they will gravitate to these locations versus safer trees if given the opportunity. Other concerns include certain cross-arm pole types, low-voltage transmission lines, and conductivity near the pole heads, so these features can be recorded in a GIS when identifying sites that we would hope the raptors would avoid.
+  
+<br><br>
+Isaac, B., Cooke, R., Simmons, D., & Hogan, F. (2008). Predictive mapping of powerful owl ( Ninox strenua) breeding sites using Geographical Information Systems (GIS) in urban Melbourne, Australia. Landscape and Urban Planning, 84(3), 212–218. https://doi.org/10.1016/j.landurbplan.2007.08.002
+  <br><br>
+
+  <b>Summary:</b>
+  Using GIS, this study attempted to generate a predictive map of the owl species <i>Ninox strenua</i> in urban areas of Melbourne, Australia based on the habitat qualities associate with their breeding in natural areas. After their research determined that water bodies, slopes, vegetation density, and presence in municipality-run reserves were important qualities for their predictions, they found that half a percent of urban Melbourne could be suitable habitat to the owls’ liking, with parks being noteworthy potential havens. While optimistic about the habitat flexibility of these owls, the researchers conclude that the hollows needed for breeding are likely to decline in urban areas, likely necessitating artificial nest box installations to maintain a place in the urban landscape.
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+This paper’s objectives closely parallel the goals of this bibliography’s creation to predict habitat for raptors in an urban environment; thus, the tactics used here can be explored. The researchers later discovered that slope as a characteristic proved too discerning to include for their urban environment, which is a good cautionary tale about not assuming too many lessons from more natural landscapes will translate to their adaptation in urban settings. The study’s introduction also highlights that several of the raptors of interest for this topic are known to be tolerant of urbanization compared to other bird groups and thus provides further reading for learning about potential habits and preferences of these species.
 
   
-<b>Summary</b>
+<br><br>
+Millsap, B. A. (2018). Demography and metapopulation dynamics of an urban Cooper’s Hawk subpopulation. The Condor (Los Angeles, Calif.), 120(1), 63–80. https://doi.org/10.1650/CONDOR-17-124.1
+  <br><br>
+  <b>Summary:</b>
+In an Albuquerque, New Mexico study of Cooper’s Hawks, investigating their metapopulation dynamics, researchers found that overall, the urban area served as a source of population growth for surrounding natural areas due to high emigration rates, but that females would nest year-round if sufficient food was around in urban settings during the Winter. They note female Cooper’s Hawks have an incentive to return to natural areas to find mates since their proximity compared to migrating female hawks allows them to nest first.
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+The author chose to only look for nests during Winter since nests would be easier to spot with foliage having dropped at this time. This strategy could be helpful in collecting data on Cooper’s Hawks if consistent with their nesting habits in Northern California. The researchers also used Great Horned Owls as visual bait to trap Cooper’s Hawks for trapping, revealing the hostility that exists between these two raptors. The use of mist nets and bal-chatri traps for Cooper’s Hawk tagging could prove useful if the capstone endeavored to track bird movement.
 
-<b>Relevance to Capstone</b>
+In Albuquerque, nesting was most prevalent in April, which would be worth investigating if this pattern holds true for Los Altos. Similarly, white-winged doves being the dominant prey type there could lend clues to their prey in this region as well.
 
-<br>
-
-  
-<b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-  <br>
-
-  
-<b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
-
-<b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-
-<br>
+The study goes into depth about statistical techniques for estimating the probability of new nesting sites existing, factoring in distance from established nests, inferred emigration and immigration rates, and age of fledglings. Incorporating this perspective could prove important for differentiating ideal nesting sites versus what is likely to be selected regardless of suitability.
 
   
-  <b>Summary</b>
+<br><br>
+Withaningsih, S., Parikesit, P., Iskandar, J., & Megantara, E. N. (2017). Breeding behavior of different raptor species in human modified landscape. Biodiversitas (Surakarta), 18(3), 1234–1242. https://doi.org/10.13057/biodiv/d180348
+  <br><br>
+  
+  <b>Summary:</b>
+  A study of the nesting sites of four Indonesian eagle species adjacent to human-occupied areas revealed that each may be influenced by different characteristics such as prey abundances when choosing nesting sites and that they bred at different times in the year, possibly to reduce competition 
+<br><br>
+<b>Relevance to Topic of Interest:</b>  
+The paper cites that raptor breeding can be described through eight distinct phases, which could all be analyzed when scrutinizing the habitat’s suitability to a raptor’s needs in the landscape. The paper raises the point that raptors can be in competition for finding nesting sites but then no longer in competition if their food preferences are divided. This distinction could lead to more or less identified overlap of raptor species, depending on whether a greater emphasis is placed on nesting site capacity or available prey capacity. They mention that the distance that birds can cruise on the wind may have a large influence on how wide of their range, and those that can cruise for long distances may be less likely to feel threatened by close residents from similar raptor species.
 
-<b>Relevance to Capstone</b>  
+  
+<br><br>
 
-<br>
-
-
-  <b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
-
-
-  <b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
+  <br><br>
 
 
-  <b>Summary</b>
 
-<b>Relevance to Capstone</b>  
+  <b>Summary:</b>
+<br><br>
 
-<br>
+<b>Relevance to Topic of Interest:</b>  
 
+<br><br>
 
-  <b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
+  <br><br>
 
 
-  <b>Summary</b>
 
-<b>Relevance to Capstone</b>  
+  <b>Summary:</b>
+<br><br>
 
-<br>
+<b>Relevance to Topic of Interest:</b>   
 
+<br><br>
 
-  <b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
+  <br><br>
 
 
-<b>Summary</b>
 
-<b>Relevance to Capstone</b>  
+  <b>Summary:</b>
+<br><br>
 
-<br>
+<b>Relevance to Topic of Interest:</b> 
 
+<br><br>
 
-  <b>Summary</b>
-
-<b>Relevance to Capstone</b>  
-
-<br>
+  <br><br>
 
 
-  <b>Summary</b>
 
-<b>Relevance to Capstone</b>  
+  <b>Summary:</b>
+<br><br>
+
+<b>Relevance to Topic of Interest:</b>  
+
+<br><br>
+
+  <br><br>
+
+
+
+  <b>Summary:</b>
+<br><br>
+
+<b>Relevance to Topic of Interest:</b>  
+
+<br><br>
+
+  <br><br>
+
+
+
+  <b>Summary:</b>
+<br><br>
+
+<b>Relevance to Topic of Interest:</b>  
 
 </body>
 
